@@ -1,4 +1,4 @@
-#about, #hours, #location {
+#content > div > div {
     border: solid black 2px;
 }
 
