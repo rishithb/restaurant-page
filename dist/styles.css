@@ -1,7 +1,322 @@
-#content > div > div {
-    border: solid black 2px;
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background: url("./imgs/kari-shea-pJn9WhMqFIs-unsplash.jpg");
+    background-size: cover;
+    background-position: 0px -50px; 
 }
 
 #sidebar {
-    background-color: rgb(216, 216, 216);
+    color: rgb(60, 41, 32);
+    background-color: rgba(187, 179, 178, 0.624);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
+
+#btns {
+    flex: .5;
+    display: flex;
+    justify-content: space-around;
+}
+
+#btns > button {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+}
+
+#logo {
+    flex: .6;
+    padding-left: 24px;
+    font-size: larger;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#logo > img {
+    width: 12%;
+}
+
+#btns > button {
+    color: rgb(60, 41, 32);
+    border: none;
+    background-color: transparent;
+}
+
+#home {
+    padding-left: 48px;
+    padding-top: 84px;
+    height: 74vh;
+}
+
+#phraseText {
+    font-family: 'Caprasimo', cursive;
+    text-align: start;
+    font-size: 60px;
+    margin-bottom: 24px;
+    background: -webkit-linear-gradient(90deg, rgb(142, 123, 115),  rgb(60, 41, 32));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 60%;
+}
+
+#about {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    width: 35%;
+    font-weight: 500;
+    /*color: rgb(255, 255, 255);*/
+    /*background-color:  rgba(117, 101, 95, 0.782);*/
+    color: rgb(69, 47, 37);
+    border-radius: 8px;
+}   
+
+#photoCredit {
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    color: rgba(255, 255, 255, 0.624);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.624);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.contactHeader {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
+    padding-bottom: 18px;
+}
+
+#PE > p, #location > p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 28px;
+}
+
+#hours > p {
+    width: 80%;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    height: 72vh;
+    width: 70%;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    grid-gap: 16px;
+}
+
+#location, #PE, #hours {
+    background-color: rgb(138, 113, 102);
+    color: rgb(226, 220, 220);
+    border-radius: 24px;
+    padding: 18px;
+
+    box-shadow: 0px 4px 5px rgba(10, 7, 6, 0.571);
+}
+
+#contact-form {
+    background-color: rgba(173, 154, 154, 0.845);
+    border-radius: 24px;
+    padding-top: 36px;
+
+    box-shadow: 0px 4px 5px rgba(10, 7, 6, 0.571);
+}
+
+#hours {
+    grid-row: 1 / 1;
+}
+
+#location {
+    grid-row: 2 / 3;
+}
+
+#PE {
+    grid-row: 3 / end;
+}
+
+#contact-form {
+    grid-row: 1 / end;
+    grid-column: 2 / end;
+}
+
+form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    width: 65%;
+    margin: auto;
+}
+
+#contact-form > h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 28px;
+    padding-bottom: 12px;
+    padding-left: 56px;
+}
+
+label {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 8px;
+}
+
+input {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(146, 123, 114);
+    color: rgb(255, 255, 255);
+    display: block;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 36px;
+    padding-left: 8px;
+
+}
+
+#message {
+    padding-bottom: 144px;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+    color: rgba(226, 220, 220, 0.784);
+}
+
+#messageField {
+    padding-bottom: 36px;
+}
+
+#submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form > div > button {
+    background-color: rgb(56, 50, 50);
+    box-shadow: 0px 2px 5px rgba(10, 7, 6, 0.323);
+    color: rgba(255, 255, 255, 0.777);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    border: none;
+    border-radius: 6px;
+    width: 108px;
+    height: 36px;
+}
+
+#menu {
+    padding-top: 24px;
+    padding-left: 144px;
+    padding-right: 144px;
+    background-color: rgba(225, 218, 215, 0.71);
+    height: 140vh;
+}
+
+#coffee {
+    padding-bottom: 64px;
+}
+
+#coffee > h3, #tea > h3 {
+    font-size: 36px;
+    font-family: 'Caprasimo', cursive;
+    font-weight: 300;
+    background: -webkit-linear-gradient(0deg, rgb(133, 116, 108),  rgb(10, 7, 6));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: fit-content;
+    padding-bottom: 18px;
+}
+
+.hc {
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+}
+
+#coffee-list, #tea-list { 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(256px, 1fr));
+    grid-gap: 36px;
+}
+
+.menuItem {
+    background-color: rgba(193, 171, 165, 0.931);
+    padding: 12px;
+    border-radius: 8px;
+    height: 100%;
+    box-shadow: 0px 4px 5px rgba(73, 51, 44, 0.271);
+}
+
+.itemTitle {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+    padding-left: 12px;
+}
+
+.itemDescription {
+    font-family: 'Raleway', sans-serif;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#footer {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(56, 50, 50);
+    width: 100%;
+    height: 64px;
+}
+
+img[id = 'git link svg'] {
+    height: 30px;
+}
+
+
+#copyright {
+    color: rgba(255, 255, 255, 0.624);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#copyright > a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#copyright > a > p {
+    padding-top: 7px;
+}
+
+#copyright > a > img {
+    padding-right: 10px;
+}
+
+
+
